@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: darkgray;
+}
+.container{
+padding: 10px;
+display: grid;
+min-height: 100vh;
+gap: 10px 15px;
+grid-template-columns: repeat(3, 1fr);/*fr 25%*/ /*IMPORTANTE definir a quantidade de colunas e linhas antes de organizar o layout*/
+grid-auto-rows: minmax(80px , auto);  /* IMPORTANTE antes de organizar o layout  */
+grid-template-areas:                 /* IMPORTATNE  configurar layout com base nas columns 3, 1fr*/
+"item1 item1 item1"
+"item2 item2 item3"
+"item2 item2 item4"
+"item5 item5 item5"
+"item5 item5 item5"
+"item6 item7 item7"
+"item8 item7 item7"
+"item9 item9 item9"
+;
+}
+.item1{
+    grid-area: item1;       /*especificar o grid area de cada item */
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;   
+}
+.item4{
+    grid-area: item4;
+}
+.item5{
+    grid-area: item5;
+}
+.item6{
+    grid-area: item6;
+}
+.item7{
+    grid-area: item7;
+}
+.item8{
+    grid-area: item8;
+}
+.item9{
+    grid-area: item9;
+}
+.item{
+    background-color: white;
+    border: solid 2px black;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    }
+/* PASSOS IMPORTANTES PARA MONTAGEM DO LAYOUT GRID
+        #container#
+1- setar o -->>>   grid-template-columns: repeat(2, 2fr); definir quantidade de colunas e a largura 
+2- setar o -->>>    grid-auto-rows: minmax(110px , auto); para que se adaptem automatico
+3- grid-column 1/3  permite setar a largura da sua coluna 
+4- grid-rown 2/4   permite esticar a sua coluna 
+
+/* grid-column -->> Define o tamanho da coluna pelas LINHAS HORIZONTAL*/ 
+/* grid-rown -->> Define o tamanho da linha pelas LINHAS VERTICAL
+
+*/
