@@ -61,8 +61,16 @@ grid-template-areas:                 /* IMPORTATNE  configurar layout com base n
     }
 /* PASSOS IMPORTANTES PARA MONTAGEM DO LAYOUT GRID
         #container#
-1- setar o -->>>   grid-template-columns: repeat(2, 2fr); definir quantidade de colunas e a largura 
+1- setar o -->>>    grid-template-columns: repeat(2, 2fr); definir quantidade de colunas e a largura 
 2- setar o -->>>    grid-auto-rows: minmax(110px , auto); para que se adaptem automatico
+3- setar o -->>>    grid-template-areas:""; para editar o layout com base nas colunas
+4- em seguida setar  o grid-area em suas determinadas classes 
+
+
+
+
+
+        Alternativa B
 3- grid-column 1/3  permite setar a largura da sua coluna 
 4- grid-rown 2/4   permite esticar a sua coluna 
 
